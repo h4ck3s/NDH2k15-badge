@@ -1,0 +1,9 @@
+*.aux
+*.bin
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.py[co]
+__pycache__
+
