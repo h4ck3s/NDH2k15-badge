@@ -107,7 +107,7 @@ Malheureusement, une fonction comme ça, ça s'inverse beaucoup moins bien qu'un
 
     \subsection{À la recherche de l'indice perdu}
 
-    Une fois les 3 jeux validés, on est toujours en mode \ttt{ROOKIE}. On a certainement raté quelque chose qui permette de passer au mode suivant. Pour avoir des idées, on peut s'intéresser au contenu du projet Github permettant de programmer le badge\footnote{\url{https://github.com/virtualabs/Ndh15Badge-library}}. Celui-ci nous rappelle qu'il y a un acceléromètre sur le badge, qui n'a pas encore été utilisé dans le challenge. En effet, à part l'accéléromètre, le buzzer émet 3 notes au démarrage, la led s'illumine lorsqu'on appuie avec le doigt sur la dent de droite, et il n'y a a priori pas de manière simple d'accéder à la mémoire EEPROM externe.
+    Une fois les 3 jeux validés, on est toujours en mode \ttt{ROOKIE}. On a certainement raté quelque chose qui permette de passer au mode suivant. Pour avoir des idées, on peut s'intéresser au contenu du projet Github permettant de programmer le badge\footnote{\url{https://github.com/virtualabs/Ndh15Badge-library}}. Celui-ci nous rappelle qu'il y a un accéléromètre sur le badge, qui n'a pas encore été utilisé dans le challenge. En effet, à part l'accéléromètre, le buzzer émet 3 notes au démarrage, la led s'illumine lorsqu'on appuie avec le doigt sur la dent de droite, et il n'y a a priori pas de manière simple d'accéder à la mémoire EEPROM externe.
 
     À quoi peut donc bien servir l'accéléromètre ? Agiter le badge dans tous les sens ne marche pas. Le donner à un chat qui l'agite dans tous les sens ? Pas de succès non plus. Tentons un Konami code, on sait jamais. Il ne marche pas non plus.
 
@@ -136,7 +136,7 @@ ou, pour se faire moins mal aux yeux, on peut convertir le dump IHEX en fichier 
 
     \subsection{Invocation réussie !}
 
-    D'une part, l'analyse statique permet d'une part de déchiffrer le contenu de la mémoire externe. Ce n'est pas forcément ce que l'on cherchait initialement, mais ça peut être utile pour la suite. Une fois le contenu de la mémoire récupéré et déchiffré (en conservant l'entête de 16 octets qui n'est pas chiffré), on obtient ceci:
+    D'une part, l'analyse statique permet de déchiffrer le contenu de la mémoire externe. Ce n'est pas forcément ce que l'on cherchait initialement, mais ça peut être utile pour la suite. Une fois le contenu de la mémoire récupéré et déchiffré (en conservant l'entête de 16 octets qui n'est pas chiffré), on obtient ceci:
 
 \begin{verbatim}
 000: 4e44 4843 ab84 795f f6d2 a594 7322 a7fe  NDHC..y_....s"..
